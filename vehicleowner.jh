@@ -1,0 +1,71 @@
+/**
+ * VehicleOwner (vehicle_owner) entity.\n @author Ibrahim Mohamed.
+ */
+entity VehicleOwner {    
+  citizenSerial String
+  passportSerial String
+  entitySerial String
+  fullName String
+  firstName String
+  middleName String
+  grandName String
+  surname String
+  aka String
+  dob Instant
+  gender String
+  driverLicenseSerial String
+  driverLicenseType Long
+  jurisdiction Long
+  updated Instant
+  account Double 
+}
+    
+/**
+ * Vehicle (vehicle) entity.\n@author Ibrahim Mohamed.
+ */
+entity Vehicle {     
+  govid String
+  plate String required
+  rfid String unique required
+  driver Long required
+  producer String
+  model String
+  year Long
+  color String
+  decals String
+  spoilers String
+  glass String
+  chassisSerial String
+  motorSerial String
+  vehicleLicenseSerial String
+  vehicleLicenseType Long required
+  vehicleType Long required
+  wanted Integer
+  licenseRevoked Integer
+  licenseExpired Integer 
+  jurisdiction Long required
+  updated Instant required
+  fuelType String
+  motorCc Long
+  licenseIssued Instant
+  licenseExpires Instant
+  wtKg Long
+  passengers Integer
+  tractorParts Integer 
+  extraSizePercent Integer
+  wtExtra Long
+  bikeData String
+  wantedBy Long
+  wantedFor String
+  office Long
+  statusName String
+  stolen Instant
+}
+
+
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         
