@@ -1,0 +1,81 @@
+{
+  "applications": "*",
+  "changelogDate": "20230130061720",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "vehicle_owner",
+  "fields": [
+    {
+      "fieldName": "citizenSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "passportSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entitySerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "grandName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "surname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aka",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dob",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "driverLicenseSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "driverLicenseType",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jurisdiction",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "account",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "VehicleOwner (vehicle_owner) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "VehicleOwner",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
