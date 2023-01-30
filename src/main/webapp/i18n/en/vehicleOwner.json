@@ -1,0 +1,39 @@
+{
+  "rfidh2MysqlApp": {
+    "vehicleOwner": {
+      "home": {
+        "title": "Vehicle Owners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Vehicle Owner",
+        "createOrEditLabel": "Create or edit a Vehicle Owner",
+        "notFound": "No Vehicle Owners found"
+      },
+      "created": "A new Vehicle Owner is created with identifier {{ param }}",
+      "updated": "A Vehicle Owner is updated with identifier {{ param }}",
+      "deleted": "A Vehicle Owner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle Owner {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle Owner"
+      },
+      "id": "ID",
+      "citizenSerial": "Citizen Serial",
+      "passportSerial": "Passport Serial",
+      "entitySerial": "Entity Serial",
+      "fullName": "Full Name",
+      "firstName": "First Name",
+      "middleName": "Middle Name",
+      "grandName": "Grand Name",
+      "surname": "Surname",
+      "aka": "Aka",
+      "dob": "Dob",
+      "gender": "Gender",
+      "driverLicenseSerial": "Driver License Serial",
+      "driverLicenseType": "Driver License Type",
+      "jurisdiction": "Jurisdiction",
+      "updated": "Updated",
+      "account": "Account"
+    }
+  }
+}
