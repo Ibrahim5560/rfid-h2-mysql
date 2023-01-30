@@ -1,0 +1,168 @@
+{
+  "applications": "*",
+  "changelogDate": "20230130063158",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "vehicle",
+  "fields": [
+    {
+      "fieldName": "govid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "plate",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rfid",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required"]
+    },
+    {
+      "fieldName": "driver",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "producer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "model",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "year",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "color",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "decals",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spoilers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glass",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chassisSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motorSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vehicleLicenseSerial",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vehicleLicenseType",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "vehicleType",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "wanted",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "licenseRevoked",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "licenseExpired",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "jurisdiction",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fuelType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motorCc",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "licenseIssued",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "licenseExpires",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "wtKg",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "passengers",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tractorParts",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "extraSizePercent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "wtExtra",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "bikeData",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wantedBy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "wantedFor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "office",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "statusName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stolen",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Vehicle (vehicle) entity.\\n@author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "Vehicle",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
