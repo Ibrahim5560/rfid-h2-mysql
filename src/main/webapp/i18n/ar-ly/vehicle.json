@@ -1,0 +1,60 @@
+{
+  "rfidh2MysqlApp": {
+    "vehicle": {
+      "home": {
+        "title": "Vehicles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Vehicle",
+        "createOrEditLabel": "Create or edit a Vehicle",
+        "notFound": "No Vehicles found"
+      },
+      "created": "A new Vehicle is created with identifier {{ param }}",
+      "updated": "A Vehicle is updated with identifier {{ param }}",
+      "deleted": "A Vehicle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Vehicle {{ id }}?"
+      },
+      "detail": {
+        "title": "Vehicle"
+      },
+      "id": "ID",
+      "govid": "Govid",
+      "plate": "Plate",
+      "rfid": "Rfid",
+      "driver": "Driver",
+      "producer": "Producer",
+      "model": "Model",
+      "year": "Year",
+      "color": "Color",
+      "decals": "Decals",
+      "spoilers": "Spoilers",
+      "glass": "Glass",
+      "chassisSerial": "Chassis Serial",
+      "motorSerial": "Motor Serial",
+      "vehicleLicenseSerial": "Vehicle License Serial",
+      "vehicleLicenseType": "Vehicle License Type",
+      "vehicleType": "Vehicle Type",
+      "wanted": "Wanted",
+      "licenseRevoked": "License Revoked",
+      "licenseExpired": "License Expired",
+      "jurisdiction": "Jurisdiction",
+      "updated": "Updated",
+      "fuelType": "Fuel Type",
+      "motorCc": "Motor Cc",
+      "licenseIssued": "License Issued",
+      "licenseExpires": "License Expires",
+      "wtKg": "Wt Kg",
+      "passengers": "Passengers",
+      "tractorParts": "Tractor Parts",
+      "extraSizePercent": "Extra Size Percent",
+      "wtExtra": "Wt Extra",
+      "bikeData": "Bike Data",
+      "wantedBy": "Wanted By",
+      "wantedFor": "Wanted For",
+      "office": "Office",
+      "statusName": "Status Name",
+      "stolen": "Stolen",
+      "gantryToll": "Gantry Toll"
+    }
+  }
+}

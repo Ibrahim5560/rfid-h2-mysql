@@ -1,0 +1,37 @@
+{
+  "rfidh2MysqlApp": {
+    "gantry": {
+      "home": {
+        "title": "Gantries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Gantry",
+        "createOrEditLabel": "Create or edit a Gantry",
+        "notFound": "No Gantries found"
+      },
+      "created": "A new Gantry is created with identifier {{ param }}",
+      "updated": "A Gantry is updated with identifier {{ param }}",
+      "deleted": "A Gantry is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Gantry {{ id }}?"
+      },
+      "detail": {
+        "title": "Gantry"
+      },
+      "id": "ID",
+      "name": "Name",
+      "route": "Route",
+      "lanes": "Lanes",
+      "longitude": "Longitude",
+      "lat": "Lat",
+      "jurisdiction": "Jurisdiction",
+      "gantryType": "Gantry Type",
+      "gantrySet": "Gantry Set",
+      "active": "Active",
+      "password": "Password",
+      "updated": "Updated",
+      "ip": "Ip",
+      "toll": "Toll",
+      "passageTimes": "Passage Times"
+    }
+  }
+}
