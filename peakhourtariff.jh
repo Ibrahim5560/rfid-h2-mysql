@@ -1,0 +1,157 @@
+/**
+ * Vehicle (vehicle) entity.\n @author Ibrahim Mohamed.
+ */
+entity Vehicle {     
+  govid String
+  plate String required
+  rfid String unique required
+  driver Long required
+  producer String
+  model String
+  year Long
+  color String
+  decals String
+  spoilers String
+  glass String
+  chassisSerial String
+  motorSerial String
+  vehicleLicenseSerial String
+  vehicleLicenseType Long required
+  vehicleType Long required
+  wanted Integer
+  licenseRevoked Integer
+  licenseExpired Integer 
+  jurisdiction Long required
+  updated Instant required
+  fuelType String
+  motorCc Long
+  licenseIssued Instant
+  licenseExpires Instant
+  wtKg Long
+  passengers Integer
+  tractorParts Integer 
+  extraSizePercent Integer
+  wtExtra Long
+  bikeData String
+  wantedBy Long
+  wantedFor String
+  office Long
+  statusName String
+  stolen Instant
+  gantryToll Double required
+}
+
+/**
+ * VehicleOwner (vehicle_owner) entity.\n @author Ibrahim Mohamed.
+ */
+entity VehicleOwner {    
+  citizenSerial String
+  passportSerial String
+  entitySerial String
+  fullName String
+  firstName String
+  middleName String
+  grandName String
+  surname String
+  aka String
+  dob Instant
+  gender String
+  driverLicenseSerial String
+  driverLicenseType Long
+  jurisdiction Long
+  updated Instant
+  wallet Double required
+}
+
+/**
+ * VehicleLicenseType (vehicle_license_type) entity.\n @author Ibrahim Mohamed.
+ */
+entity VehicleLicenseType {   
+  name String
+  rank Integer
+  engName String
+  code String
+  updated Instant
+  active Integer required
+  gantryToll Double required
+}
+
+/**
+ * Gantry (gantry) entity.\n @author Ibrahim Mohamed.
+ */
+entity Gantry { 
+  name String
+  route Integer
+  lanes Integer
+  longitude Double
+  lat Double
+  jurisdiction Integer
+  gantryType Integer
+  gantrySet Integer
+  active Integer
+  password String
+  updated Instant
+  ip String
+  toll Double required
+  passageTimes Integer required
+}
+/**
+ * TollWhiteList (toll_white_list) entity.\n @author Ibrahim Mohamed.
+ */
+entity TollWhiteList {     
+  name String
+  engName String
+  code String
+  active Integer required
+  updated Instant required
+  gantry Integer
+  vehicleLicenseType Integer
+  vehicle Integer
+  vehicleOwner Integer
+  passageTimes Integer required
+}  
+/**
+ * TollPackage (toll_package) entity.\n @author Ibrahim Mohamed.
+ */
+entity TollPackage {  
+  name String
+  engName String
+  code String
+  active Integer required
+  updated Instant required
+  durationInDays Integer
+  gantry Integer
+  vehicleLicenseType Integer
+  passageTimes Integer required
+  totalFees Double required
+}  
+/**
+ * TollSubscription (toll_subscription) entity.\n @author Ibrahim Mohamed.
+ */
+entity TollSubscription {     
+  dateTimeFrom Instant required
+  vehicle Integer
+  vehicleOwner Integer
+  active Integer required
+  updated Instant required
+}  
+/**
+ * PeakHourTariff (peak_hour_tariff) entity.\n @author Ibrahim Mohamed.
+ */
+entity PeakHourTariff {
+  PeakHourFrom Instant required
+  PeakHourTo Instant required
+  gantry Integer
+  gantryToll Double required
+  active Integer required
+  updated Instant required
+}
+relationship OneToMany {
+  TollPackage {tollSubscription} to TollSubscription {tollPackage}
+}
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         
