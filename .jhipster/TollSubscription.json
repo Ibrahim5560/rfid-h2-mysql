@@ -1,0 +1,52 @@
+{
+  "applications": "*",
+  "changelogDate": "20230204042403",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "toll_subscription",
+  "fields": [
+    {
+      "fieldName": "dateTimeFrom",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dateTimeTo",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "vehicle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vehicleOwner",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "TollSubscription (toll_subscription) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "TollSubscription",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tollPackage",
+      "otherEntityRelationshipName": "tollSubscription",
+      "relationshipName": "tollPackage",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

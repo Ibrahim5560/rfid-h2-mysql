@@ -1,0 +1,34 @@
+{
+  "rfidh2MysqlApp": {
+    "tollPackage": {
+      "home": {
+        "title": "Toll Packages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Toll Package",
+        "createOrEditLabel": "Create or edit a Toll Package",
+        "notFound": "No Toll Packages found"
+      },
+      "created": "A new Toll Package is created with identifier {{ param }}",
+      "updated": "A Toll Package is updated with identifier {{ param }}",
+      "deleted": "A Toll Package is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Toll Package {{ id }}?"
+      },
+      "detail": {
+        "title": "Toll Package"
+      },
+      "id": "ID",
+      "name": "Name",
+      "engName": "Eng Name",
+      "code": "Code",
+      "active": "Active",
+      "updated": "Updated",
+      "durationInDays": "Duration In Days",
+      "gantry": "Gantry",
+      "vehicleLicenseType": "Vehicle License Type",
+      "passageTimes": "Passage Times",
+      "totalFees": "Total Fees",
+      "tollSubscription": "Toll Subscription"
+    }
+  }
+}
