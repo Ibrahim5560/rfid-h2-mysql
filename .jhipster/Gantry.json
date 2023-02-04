@@ -1,0 +1,75 @@
+{
+  "applications": "*",
+  "changelogDate": "20230204043602",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "gantry",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "route",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lanes",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "lat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "jurisdiction",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gantryType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gantrySet",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "ip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toll",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "passageTimes",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "Gantry (gantry) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "Gantry",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

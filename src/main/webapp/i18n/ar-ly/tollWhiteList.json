@@ -1,0 +1,33 @@
+{
+  "rfidh2MysqlApp": {
+    "tollWhiteList": {
+      "home": {
+        "title": "Toll White Lists",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Toll White List",
+        "createOrEditLabel": "Create or edit a Toll White List",
+        "notFound": "No Toll White Lists found"
+      },
+      "created": "A new Toll White List is created with identifier {{ param }}",
+      "updated": "A Toll White List is updated with identifier {{ param }}",
+      "deleted": "A Toll White List is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Toll White List {{ id }}?"
+      },
+      "detail": {
+        "title": "Toll White List"
+      },
+      "id": "ID",
+      "name": "Name",
+      "engName": "Eng Name",
+      "code": "Code",
+      "active": "Active",
+      "updated": "Updated",
+      "gantry": "Gantry",
+      "vehicleLicenseType": "Vehicle License Type",
+      "vehicle": "Vehicle",
+      "vehicleOwner": "Vehicle Owner",
+      "passageTimes": "Passage Times"
+    }
+  }
+}
