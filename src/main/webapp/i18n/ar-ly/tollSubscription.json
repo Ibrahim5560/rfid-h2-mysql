@@ -1,0 +1,29 @@
+{
+  "rfidh2MysqlApp": {
+    "tollSubscription": {
+      "home": {
+        "title": "Toll Subscriptions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Toll Subscription",
+        "createOrEditLabel": "Create or edit a Toll Subscription",
+        "notFound": "No Toll Subscriptions found"
+      },
+      "created": "A new Toll Subscription is created with identifier {{ param }}",
+      "updated": "A Toll Subscription is updated with identifier {{ param }}",
+      "deleted": "A Toll Subscription is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Toll Subscription {{ id }}?"
+      },
+      "detail": {
+        "title": "Toll Subscription"
+      },
+      "id": "ID",
+      "dateTimeFrom": "Date Time From",
+      "vehicle": "Vehicle",
+      "vehicleOwner": "Vehicle Owner",
+      "active": "Active",
+      "updated": "Updated",
+      "tollPackage": "Toll Package"
+    }
+  }
+}

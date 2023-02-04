@@ -48,6 +48,15 @@ public class CacheConfiguration {
             createCache(cm, com.isoft.rfid.domain.User.class.getName());
             createCache(cm, com.isoft.rfid.domain.Authority.class.getName());
             createCache(cm, com.isoft.rfid.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.isoft.rfid.domain.Vehicle.class.getName());
+            createCache(cm, com.isoft.rfid.domain.VehicleOwner.class.getName());
+            createCache(cm, com.isoft.rfid.domain.VehicleLicenseType.class.getName());
+            createCache(cm, com.isoft.rfid.domain.Gantry.class.getName());
+            createCache(cm, com.isoft.rfid.domain.TollWhiteList.class.getName());
+            createCache(cm, com.isoft.rfid.domain.TollPackage.class.getName());
+            createCache(cm, com.isoft.rfid.domain.TollPackage.class.getName() + ".tollSubscriptions");
+            createCache(cm, com.isoft.rfid.domain.TollSubscription.class.getName());
+            createCache(cm, com.isoft.rfid.domain.PeakHourTariff.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,29 @@
+{
+  "rfidh2MysqlApp": {
+    "peakHourTariff": {
+      "home": {
+        "title": "Peak Hour Tariffs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Peak Hour Tariff",
+        "createOrEditLabel": "Create or edit a Peak Hour Tariff",
+        "notFound": "No Peak Hour Tariffs found"
+      },
+      "created": "A new Peak Hour Tariff is created with identifier {{ param }}",
+      "updated": "A Peak Hour Tariff is updated with identifier {{ param }}",
+      "deleted": "A Peak Hour Tariff is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Peak Hour Tariff {{ id }}?"
+      },
+      "detail": {
+        "title": "Peak Hour Tariff"
+      },
+      "id": "ID",
+      "peakHourFrom": "Peak Hour From",
+      "peakHourTo": "Peak Hour To",
+      "gantry": "Gantry",
+      "gantryToll": "Gantry Toll",
+      "active": "Active",
+      "updated": "Updated"
+    }
+  }
+}

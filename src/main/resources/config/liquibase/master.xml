@@ -17,7 +17,16 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211435_added_entity_Vehicle.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211436_added_entity_VehicleOwner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211437_added_entity_VehicleLicenseType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211438_added_entity_Gantry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211439_added_entity_TollWhiteList.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211440_added_entity_TollPackage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211441_added_entity_TollSubscription.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20230204211442_added_entity_PeakHourTariff.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20230204211441_added_entity_constraints_TollSubscription.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
