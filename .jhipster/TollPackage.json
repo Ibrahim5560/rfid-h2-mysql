@@ -1,0 +1,68 @@
+{
+  "applications": "*",
+  "changelogDate": "20230204211440",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "toll_package",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "engName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "durationInDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gantry",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vehicleLicenseType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "passageTimes",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "totalFees",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "TollPackage (toll_package) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "TollPackage",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tollSubscription",
+      "otherEntityRelationshipName": "tollPackage",
+      "relationshipName": "tollSubscription",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

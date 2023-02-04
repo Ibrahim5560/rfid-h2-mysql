@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20230204211442",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "peak_hour_tariff",
+  "fields": [
+    {
+      "fieldName": "peakHourFrom",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "peakHourTo",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "gantry",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "gantryToll",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "PeakHourTariff (peak_hour_tariff) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "PeakHourTariff",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,60 @@
+{
+  "applications": "*",
+  "changelogDate": "20230204211439",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "toll_white_list",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "engName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updated",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "gantry",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vehicleLicenseType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vehicle",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vehicleOwner",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "passageTimes",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "TollWhiteList (toll_white_list) entity.\\n @author Ibrahim Mohamed.",
+  "jpaMetamodelFiltering": true,
+  "name": "TollWhiteList",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
