@@ -1,0 +1,61 @@
+/**
+ * HandHeldGroup (hand_held_group) entity.\n @author Ibrahim Mohamed.
+ */
+entity HandHeldGroup {  
+  name String
+  engName String
+  code String
+  gantry Integer
+  office Integer
+  ambush Integer
+  active Integer required
+  updated Instant required
+}  
+/**
+ * HandHeldUser (hand_held_user) entity.\n @author Ibrahim Mohamed.
+ */
+entity HandHeldUser {     
+  ownerId Integer
+  jobTitle String
+  active Integer required
+  username String
+  password String
+  updated Instant required
+  devices String
+}   
+/**
+ * HandHeldUserGroup (hand_held_user_group) entity.\n @author Ibrahim Mohamed.
+ */
+entity HandHeldUserGroup {     
+  
+}  
+/**
+ * HandHeldFields (hand_held_fields) entity.\n @author Ibrahim Mohamed.
+ */
+entity HandHeldFields {       
+  name String
+  engName String
+  code String
+  active Integer required
+  updated Instant required
+}   
+/**
+ * HandHeldGroupFields (hand_held_group_fields) entity.\n @author Ibrahim Mohamed.
+ */
+entity HandHeldGroupFields {   
+
+}  
+
+relationship OneToMany {
+  HandHeldUserGroup {handHeldUser} to HandHeldUser {handHeldUserGroup}
+  HandHeldUserGroup {handHeldGroup} to HandHeldGroup {handHeldUserGroup}
+  
+  HandHeldGroupFields {handHeldGroup} to HandHeldGroup {handHeldGroupFields}
+  HandHeldGroupFields {handHeldFields} to HandHeldFields {handHeldGroupFields}
+}
+paginate all with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter all
+
+         
